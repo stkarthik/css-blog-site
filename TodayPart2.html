@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            margin: 0px
+        }
+        .Acre-relative{
+            position: relative;
+            width:50%;
+            left: 25%;
+            height:500px;
+            border-radius: 30px;
+            box-shadow: 5px 2px 5px;
+            border:2px black solid;
+            background-color: rgb(103, 186, 246);
+            top:100px;
+        }
+        .Acre-relative img{
+            width:100%;
+            height:100%;
+            border-radius: 30px;
+        }
+        .House1-absolute1{
+            position: absolute;
+            top:50px;
+            left:20px;
+            width: 400px;
+            height: 200px;
+            border:2px black solid;
+            background-color: azure;
+            border-radius: 20px;
+            box-shadow: 5px 2px 5px;     /*1st left 2nd top 3rd concentration*/ 
+        }
+        .House2-absolute2{
+            position: absolute;
+            top:50px;
+            right:20px;
+            width: 400px;
+            height: 200px;
+            bottom:0px;
+            border:2px black solid;
+            background-color: azure;
+            border-radius: 20px;
+            box-shadow: 5px 2px; /*1st left 2nd top 3rd concentration*/ 
+        }
+        header{
+            background-color: aqua;
+            font-size: xx-large;
+            text-align: center;
+        }
+        header h1{
+            margin: 0px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>My Blog</h1>
+    </header>
+    <div class="Acre-relative">
+        <div class="House1-absolute1">
+            <h1>First Blog</h1>
+            <h3>About Internship</h3>
+        </div>
+        <div class="House2-absolute2">
+            <h1>Second Blog</h1>
+            <h3>About Goa Tour</3h>
+        </div>
+    </div>
+</body>
+</html>
