@@ -29,13 +29,79 @@
         }
         .main12{
             position: absolute;
-            top:400px;
+            top:200px;
             color: white;
             width:50%;
             text-align: center;
             font-size:xx-large;
             left:25%;
             right:25%;
+            font-family: sans-serif;
+        }
+        #small{
+            font-size: smaller;
+        }
+        .main13{
+            position: absolute;
+            /* background-color: blue;
+            width:50%; */
+            text-align: center;
+            top:650px;
+            left:30%;
+            right:25%;
+        }
+        .main13 input{
+            width: 500px;
+            height: 55px;
+            background-color: rgb(128, 128, 128,0.5);
+            border: 2px solid silver;
+        }
+        .main13 ::placeholder{
+            color:silver;
+            font-size: larger;
+            padding:30px;
+        }
+        .main13 button{
+            width: 200px;
+            height: 63px;
+            color: white;
+            background-color: red;
+            font-size: larger;
+            border: 2px solid silver;
+        }
+        .main14{
+            position: absolute;
+            right:300px;
+            top:50px;
+
+        }
+        .main14 select{
+            width: 100px;
+            height: 30px;
+            background-color: rgb(0, 0, 0,0.5);
+            color:white;
+            border: 2px solid silver;
+        }
+        #option{
+            background-color: rgb(0, 0, 0,0.5);
+            color:white;
+        }
+        .main14 button{
+            background-color: hwb(0 0% 20%);
+            color: white;
+            font-size: large;
+            width:100px;
+            height:30px;
+            border: 2px solid silver;
+        }
+        #over:hover{
+            background-color: black;
+            color: white;
+        }
+        .main2{
+            width:100vw;
+            height:100vh;
+            background-color: black;
         }
     </style>
 </head>
@@ -48,11 +114,33 @@
         <div class="main12">
             <h1>Unlimited movies, </h1>
             <h1>TV shows and more</h1>
-            <h4>Starts at ₹149. Cancel at any time.</h4>
-            Ready to warch? enter your mail id to create or restart your membership.
+            <h5 id="small">Starts at ₹149. Cancel at any time.</h5>
+            <p id="small">Ready to warch? enter your mail id to create or restart your membership.</p>
         </div>
-        <div class="main13"></div>
-        <div class="main14"></div>
+        <div class="main13">
+            <table>
+                <tr>
+                    <td><input type="email" placeholder="Enter Email"></td>
+                    <td><button id="over"><b>Get Started ></b></button></td>
+                </tr>
+            </table>
+        </div>
+        <div class="main14">
+            <table>
+                <tr>
+                    <td>
+                        <select>
+                            <option id="option">தமிழ்</option>
+                            <option id="option">English</option>
+                        </select>
+                    </td>
+                    <td><button><b>Sign in</b></button></td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <div class="main2">
+
     </div>
 </body>
 </html>
